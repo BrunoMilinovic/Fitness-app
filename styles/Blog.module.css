@@ -1,0 +1,478 @@
+.body {
+  background-color: #f4f7f6;
+  margin-top: 20px;
+}
+.card {
+  background: #fff;
+  transition: 0.5s;
+  border: 0;
+  margin-bottom: 30px;
+  border-radius: 0.55rem;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+}
+.card .body {
+  color: #444;
+  padding: 20px;
+  font-weight: 400;
+}
+.header {
+  color: #444;
+  padding: 20px;
+  position: relative;
+  box-shadow: none;
+}
+.single_post {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  flex-wrap: wrap;
+}
+
+.single_post .body {
+  padding: 30px;
+}
+
+.single_post .img_post {
+  position: relative;
+  overflow: hidden;
+  max-height: 500px;
+  margin-bottom: 30px;
+}
+
+.single_post .img_post > img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.4s ease, opacity 0.4s ease;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  max-width: 100%;
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.01);
+}
+
+.single_post .img_post:hover img {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  opacity: 0.7;
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all 0.8s ease-in-out;
+}
+
+.single_post .img_post:hover .social_share {
+  display: block;
+}
+
+.single_post .footer {
+  padding: 10px 30px 30px 30px;
+}
+
+.single_post .footer .actions {
+  display: inline-block;
+}
+
+.single_post .footer .stats {
+  cursor: default;
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  float: right;
+  margin: 0;
+  line-height: 35px;
+}
+
+.single_post .footer .stats li {
+  border-left: solid 1px rgba(160, 160, 160, 0.3);
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  line-height: 1;
+  margin: 0 0 0 2em;
+  padding: 0 0 0 2em;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.single_post .footer .stats li a {
+  color: #777;
+}
+
+.single_post .footer .stats li:first-child {
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.single_post h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.single_post h3 a {
+  color: #242424;
+  text-decoration: none;
+}
+
+.single_post p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.single_post .blockquote p {
+  margin-top: 0 !important;
+}
+
+.single_post .meta {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.single_post .meta li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.single_post .meta li a {
+  font-style: italic;
+  color: #959595;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.single_post .meta li a i {
+  margin-right: 6px;
+  font-size: 12px;
+}
+
+.single_post2 {
+  overflow: hidden;
+}
+
+.single_post2 .content {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 80px;
+  position: relative;
+}
+
+.single_post2 .content .actions_sidebar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 60px;
+}
+
+.single_post2 .content .actions_sidebar a {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 0;
+  text-align: center;
+  border-right: 1px solid #e4eaec;
+}
+
+.single_post2 .content .title {
+  font-weight: 100;
+}
+
+.single_post2 .content .text {
+  font-size: 15px;
+}
+
+.right_box .categories-clouds li {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.right_box .categories-clouds li a {
+  display: block;
+  border: 1px solid;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+.right_box .instagram-plugin {
+  overflow: hidden;
+}
+
+.right_box .instagram-plugin li {
+  float: left;
+  overflow: hidden;
+  border: 1px solid #fff;
+}
+
+.comment-reply li {
+  margin-bottom: 15px;
+}
+
+.comment-reply li:last-child {
+  margin-bottom: none;
+}
+
+.comment-reply li h5 {
+  font-size: 18px;
+}
+
+.comment-reply li p {
+  margin-bottom: 0px;
+  font-size: 15px;
+  color: #777;
+}
+
+.comment-reply .list-inline li {
+  display: inline-block;
+  margin: 0;
+  padding-right: 20px;
+}
+
+.comment-reply .list-inline li a {
+  font-size: 13px;
+}
+.Written {
+  font-size: 14px;
+  padding-bottom: 15px;
+  font-style: italic;
+  color: orangered;
+}
+
+@media (max-width: 640px) {
+  .blog_page .left-box .single-comment-box > ul > li {
+    padding: 25px 0;
+  }
+  .blog_page .left-box .single-comment-box ul li .icon-box {
+    display: inline-block;
+  }
+  .blog_page .left-box .single-comment-box ul li .text-box {
+    display: block;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  .blog_page .single_post .footer .stats {
+    float: none;
+    margin-top: 10px;
+  }
+  .blog_page .single_post .body,
+  .blog_page .single_post .footer {
+    padding: 30px;
+  }
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card2 {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* this is for aside buttno  */
+
+.button53 {
+  background-color: rgba(255, 0, 0, 0.829);
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 70%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button53:focus {
+  outline: 0;
+}
+
+.button53:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button53:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button53 {
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+/* aside */
+.popular_post {
+  margin: 20px;
+}
+
+.popular_post ul {
+  list-style-type: none;
+  width: 500px;
+}
+
+.popular_post h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+.popular_post li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+.popular_post li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+
+.popular_post li {
+  padding: 10px;
+  overflow: auto;
+}
+
+.popular_post li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+.Spantags {
+  padding: 2px;
+  font-size: 17px;
+}
+.Spantags span {
+  padding: 8px;
+  margin: 4px;
+}
+.hr {
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  background: red;
+}
+.popPost {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  padding-left: 8px;
+}
+.popPost:hover {
+  color: red;
+}
+.popLi {
+  padding-top: 12px;
+  padding-bottom: 5px;
+}
+.popLi i {
+  color: red;
+  font-size: 20px;
+}
+.date {
+  padding-left: 23px;
+  font-size: 13px;
+  color: #777;
+}
+
+.blog_h3 {
+  font-family: georgia, serif;
+  color: #755c44;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.blog_h3 em {
+  color: #8f7c47;
+  letter-spacing: 0.05em;
+  text-transform: none;
+  font-size: 20px;
+}
+
+.authorDate {
+  border-color: #695c44;
+  border-bottom: 1px dashed;
+  margin: 4px 10px 4px 10px;
+  padding-left: 5px;
+  padding-bottom: 7px;
+  color: #666666;
+
+  font-variant: normal;
+  font-weight: lighter;
+}
+.h11 {
+  font-family: Georgia, serif;
+  color: #666666;
+  font-size: 30px;
+  line-height: 1em;
+  margin: 15px 5px 0 30px;
+}
+
+.h11 strong {
+  color: #a80c1e;
+  display: block;
+  font-size: 85px;
+  font-weight: normal;
+  letter-spacing: -3.5px;
+  line-height: 1em;
+}
+.texttitle {
+  font-size: 16px;
+  color: #242424;
+  width: 650px;
+  line-height: 1.5;
+  margin: 15px 5px 0 30px;
+}
